@@ -2,7 +2,11 @@
 $version = 8;
 $langue = 'fr';
 $url = 'PHP %d est disponible sur l\'adresse https://%s.php.net';
-printf($url, $version, $langue);
+//printf($url, $version, $langue);
+
+$reponse = sprintf($url, $version, $langue);
+echo $reponse;
+
 printf('<br />');
 printf('%b <br />', 3);
 printf('%o %x <br />', 15, 20);
