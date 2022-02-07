@@ -40,3 +40,13 @@ $texte = 'Je me prénomme Frédéric';
 // Warning : les caractères accentués sont comptés sur deux octets et non un
 // Dans l'exemple, strlen() renvoie 26, mb_strlen() renvoie 23
 echo mb_strlen($texte);
+
+echo "<hr />";
+
+$mail = 'contact@fredericnoel.com';
+$position = strpos($mail, '@');
+if ($position === false)
+    echo "Il manque @";
+else   
+    echo "@ ne manque pas";
+
