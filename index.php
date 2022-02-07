@@ -33,5 +33,10 @@ vprintf('%s %f', $infos);
 echo "<hr />";
 
 // Accès à un caractère précis d'une chaîne
-$texte = 'Je fais du PHP';
-echo $texte[1]; // $texte{1} fonctionnait avant PHP8
+$texte = 'Je me prénomme Frédéric';
+//echo $texte[1]; // $texte{1} fonctionnait avant PHP8
+
+// Affiche le nombre de caractères d'une chaîne
+// Warning : les caractères accentués sont comptés sur deux octets et non un
+// Dans l'exemple, strlen() renvoie 26, mb_strlen() renvoie 23
+echo mb_strlen($texte);
