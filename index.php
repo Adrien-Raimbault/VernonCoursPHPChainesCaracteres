@@ -9,3 +9,12 @@ if (preg_match('/un chat|un chien/', $texte)) {
 else {
     echo "La phrase ne contient ni 'un chat', ni 'un chien'";
 }
+
+
+/*if (strpos($texte, 'un chat') !== false || strpos($texte, 'un chien') !== false) {
+    echo "Chien ou chat";
+}
+
+else {
+    echo "Ni chien, ni chat";
+}*/
