@@ -18,7 +18,7 @@ echo substr('toto@gmail.com', 4, 2); // Affiche '@g'
 echo "<br />";
 
 // Remplacer un motif par un autre
-$texte = 'Je fais du PHP';
-$cherche = 'PHP';
-$remplace = 'code';
+$texte = 'pomme, poire, kiwi, banane';
+$cherche = array('pomme', 'poire', 'kiwi', 'banane');
+$remplace = 'fruit';
 echo str_replace($cherche, $remplace, $texte);
