@@ -26,5 +26,12 @@ else
 
 echo "<hr />";
 
+// Affiche une chaîne depuis une entrée sous forme de tableau
 $infos = ['PHP', 8.1];
-vprintf('%s %d', $infos);
+vprintf('%s %f', $infos);
+
+echo "<hr />";
+
+// Accès à un caractère précis d'une chaîne
+$texte = 'Je fais du PHP';
+echo $texte[1]; // $texte{1} fonctionnait avant PHP8
