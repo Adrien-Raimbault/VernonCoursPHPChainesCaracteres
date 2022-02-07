@@ -23,3 +23,8 @@ if ($langue === 'en')
     printf($en, 8.1, 'PHP');
 else 
     printf($fr, 8.1, 'PHP');
+
+echo "<hr />";
+
+$infos = ['PHP', 8.1];
+vprintf('%s %d', $infos);
