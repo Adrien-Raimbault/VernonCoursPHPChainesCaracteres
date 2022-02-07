@@ -19,3 +19,16 @@ $recherche2 = '/[0-2][0-9]h[0-5][0-9]/';
 // $recherche2 = '/[^3-9][0-9]h[0-5][0-9]/'; Caractères "interdits"
 echo preg_match($recherche2, $texte2); // Renvoie 1
 
+/*
+[[:lower:]] lettres minuscules
+[[:upper:]] lettre majuscules
+[[:alpha:]] caractères alphabétiques
+[[:digit:]] chiffres décimaux 
+[[:alnum:]] alphanumérique
+[[:xdigit:]] chiffres héxadécimaux
+[[:ascii:]] ASCII 0 à 127
+[[:blank:]] espace ou tabulatio
+
+[[:^alpha:]] tout sauf les caractères alphanumériques 
+*/
+
