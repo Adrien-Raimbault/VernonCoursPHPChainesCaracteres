@@ -1,24 +1,11 @@
 <?php
-// echo 'L\'âge que j\'ai';
+// Expressions rationnelles
 
-htmlspecialchars("Tom & Jerry");
+$texte = "J'ai adopté un chaton"; 
 
-$html = '<h1><a href="index.php">Page index</a></h1>';
-echo "Texte : " . strip_tags($html, '<a>') . "<br />"; // 2e paramètres : tags autorisés
-
-// Conventions d'affichage locales
-// setlocale(catégorie, localité);
-setlocale(LC_ALL, 'fr_FR', 'fr', 'FR', 'fr_FR@euro');
-
-// Manipulation sur des chaînes
-
-echo strstr('toto@gmail.com', '@'); // Affiche '@gmail.com';
-echo "<br />";
-echo substr('toto@gmail.com', 4, 2); // Affiche '@g'
-echo "<br />";
-
-// Remplacer un motif par un autre
-$texte = 'pomme, poire, kiwi, banane';
-$cherche = array('pomme', 'poire', 'kiwi', 'banane');
-$remplace = 'fruit';
-echo str_replace($cherche, $remplace, $texte);
+if (preg_match('/chat/', $texte)) {
+    echo "La phrase contient le mot 'chat'";
+}
+else {
+    echo "La phrase ne contient pas le mot 'chat'";
+}
