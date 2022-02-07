@@ -30,5 +30,9 @@ echo preg_match($recherche2, $texte2); // Renvoie 1
 [[:blank:]] espace ou tabulatio
 
 [[:^alpha:]] tout sauf les caractères alphanumériques 
+
+\d chiffre décimal
+\w caractère constituant un mot
+\s espace
 */
 
