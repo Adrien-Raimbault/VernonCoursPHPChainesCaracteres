@@ -10,11 +10,5 @@ else {
     echo "La phrase ne contient ni 'un chat', ni 'un chien'";
 }
 
-
-/*if (strpos($texte, 'un chat') !== false || strpos($texte, 'un chien') !== false) {
-    echo "Chien ou chat";
-}
-
-else {
-    echo "Ni chien, ni chat";
-}*/
+$recherche = "/J'ai adopté un (chat|chien)/";
+preg_match($recherche, $texte); // Renvoie la valeur 1
